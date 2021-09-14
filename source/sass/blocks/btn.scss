@@ -1,0 +1,29 @@
+.btn {
+  color: $corp-green;
+  background: none;
+  font-size: 16px;
+  width: 200px;
+  height: 50px;
+  border: 1px solid $corp-green;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: $corp-green;
+  color: $white;
+}
+
+.btn--oval {
+  background-color: $corp-green;
+  border-radius: 35px;
+  color: $white;
+  font-size: 20px;
+  width: 300px;
+  height: 60px;
+}
+
+.btn--wide {
+  width: 100%;
+  border: none;
+  border-top: 1px solid $grey-100;
+}

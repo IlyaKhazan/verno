@@ -1,0 +1,44 @@
+.materials {
+  @include wrapper;
+  position: relative;
+  padding: 50px 0;
+}
+
+.materials__title {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.materials__button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.materials__btn {
+  margin: 0 25px;
+}
+
+.materials__picture {
+  &--nojs {
+    display: none;
+  }
+}
+.materials__info {
+  position: absolute;
+  font-size: 16px;
+  background-color: $grey-100;
+  top: 300px;
+  right: 0;
+  width: 450px;
+  height: 350px;
+  padding: 30px 40px;
+}
+
+.materials__info-title {
+  font-size: 20px;
+  font-weight: bold;
+}

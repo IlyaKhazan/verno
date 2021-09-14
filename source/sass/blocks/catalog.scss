@@ -1,0 +1,45 @@
+.catalog {
+  background-color: $grey-100;
+  @include wrapper;
+}
+
+.catalog__wrapper {
+}
+
+.catalog__title {
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.catalog__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+}
+
+.catalog__item {
+  background-color: $white;
+}
+
+.catalog__item-wrap {
+  padding: 15px 25px;
+}
+
+.catalog__item-info {
+  min-height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  div {
+    padding-right: 24px;
+  }
+
+  dd {
+    margin: 0;
+  }
+}

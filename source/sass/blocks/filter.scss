@@ -1,0 +1,27 @@
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  @include wrapper;
+}
+
+.filter__title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.filter__item {
+  margin-right: 25px;
+}
