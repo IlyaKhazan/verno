@@ -1,0 +1,28 @@
+.callback {
+  padding: 100px 0;
+}
+
+.callback__offer {
+  background-color: $grey-100;
+  padding: 100px;
+  order: 1;
+}
+
+.callback__wrapper {
+  @include wrapper;
+  display: flex;
+}
+
+.callback__title {
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 70px;
+  padding-bottom: 50px;
+}
+
+.callback__subtitle {
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+}

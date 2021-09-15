@@ -1,0 +1,54 @@
+.review-card {
+  padding: 50px 0;
+  position: relative;
+}
+
+.review-card__text {
+  text-align: center;
+  padding: 0 130px 45px;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 40px;
+    top: 25px;
+    width: 95px;
+    height: 70px;
+    background: url("../../img/quotes.svg") no-repeat;
+  }
+}
+
+.review-card__photos {
+  text-align: center;
+}
+
+.review-card__wrapper {
+  position: relative;
+  @include wrapper;
+  box-shadow: -2px 4px 30px rgba(0, 0, 0, 0.13);
+  width: 900px;
+  padding: 50px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 58%;
+    width: 30px;
+    height: 30px;
+    border-top: 2px solid $grey-100;
+    border-right: 2px solid $grey-100;
+    margin-right: 60px;
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(225deg);
+    left: 60px;
+  }
+}
+
+.review-card__author {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: right;
+}

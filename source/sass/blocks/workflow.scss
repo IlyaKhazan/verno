@@ -1,0 +1,64 @@
+.workflow {
+  @include wrapper;
+  padding: 50px 0 25px;
+}
+
+.workflow__title {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.workflow__list {
+  padding: 200px 0 0 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.workflow__item {
+  position: relative;
+  width: 15%;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 172px;
+    height: 54px;
+    top: -90px;
+    left: 0;
+  }
+
+  &--measurement::before {
+    background-image: url("../../img/verno_logo_white.png");
+  }
+
+  &--design::before {
+    background-image: url("../../img/verno_logo_white.png");
+  }
+
+  &--payment::before {
+    background-image: url("../../img/verno_logo_white.png");
+  }
+
+  &--production::before {
+    background-image: url("../../img/verno_logo_white.png");
+  }
+
+  &--install::before {
+    background-image: url("../../img/verno_logo_white.png");
+  }
+}
+
+.workflow__item-title {
+  margin: 0;
+}
+
+.workflow__btn {
+  display: block;
+  margin: 50px auto;
+}

@@ -1,10 +1,13 @@
 .filter {
+  background-color: white;
+}
+
+.filter__wrapper {
+  @include wrapper;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  @include wrapper;
 }
 
 .filter__title {
