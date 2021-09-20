@@ -11,8 +11,9 @@
 }
 
 .filter__title {
-  font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .filter__list {
@@ -27,4 +28,6 @@
 
 .filter__item {
   margin-right: 25px;
+  font-size: 15px;
+  line-height: 20px;
 }

@@ -1,10 +1,12 @@
 .callback-form {
   padding: 50px;
+  background: $white;
 }
 
 .callback-form__title {
-  font-size: 25px;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 32px;
   margin: 0 0 25px;
 }
 
@@ -17,7 +19,7 @@
   padding: 5px;
   height: 40px;
   border: none;
-  border-bottom: 1px solid $grey-100;
+  border-bottom: 1px solid $corp-brown;
   margin-bottom: 15px;
 }
 
@@ -29,6 +31,6 @@
   font-size: 12px;
 
   a {
-    color: $corp-green;
+    color: $corp-brown;
   }
 }

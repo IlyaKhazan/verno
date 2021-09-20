@@ -1,11 +1,10 @@
 .features {
   @include wrapper;
-  padding-top: 100px;
+  padding: 100px 0 80px 0;
 }
 
 .features__title {
-  font-size: 40px;
-  line-height: 60px;
+  @include section-title;
   margin: 0;
 }
 
@@ -24,7 +23,7 @@
 
 .features__item {
   padding: 20px;
-  border: 1px solid $black;
+  border: 1px solid $corp-brown;
 
   &:first-child {
     grid-area: a;
@@ -50,4 +49,16 @@
   &:last-child {
     grid-area: f;
   }
+}
+
+.features__item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.features__item-info {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
 }

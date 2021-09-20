@@ -1,5 +1,4 @@
 .reviews__title {
+  @include section-title;
   text-align: center;
-  font-size: 58px;
-  font-weight: bold;
 }

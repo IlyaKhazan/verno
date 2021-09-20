@@ -4,6 +4,12 @@
   width: 200px;
   height: 50px;
   border: 2px solid $corp-green;
-  border-radius: 25px;
   background: none;
+  cursor: pointer;
+  font-family: "Euclid Square", "Arial", sans-serif;
+
+  &:hover {
+    transition: all 0.5s;
+    transform: translateY(-10px);
+  }
 }

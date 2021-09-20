@@ -1,15 +1,16 @@
 .catalog {
-  background-color: $grey-100;
+  background-color: $grey;
+  padding-bottom: 25px;
+  border-top: 1px solid $grey;
 }
 
 .catalog__title {
-  font-size: 50px;
-  line-height: 60px;
+  @include section-title;
 }
 
 .catalog__list {
-  padding: 50px 0;
-  margin: 0;
+  padding-top: 25px;
+  margin-right: auto;
   list-style: none;
   display: grid;
   grid-template-columns: 590px 590px;
@@ -19,10 +20,12 @@
 
 .catalog__item {
   background-color: $white;
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog__item-wrap {
-  padding: 15px 25px;
+  padding: 15px 25px 0;
 }
 
 .catalog__item-info {
@@ -30,24 +33,39 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-
-  div {
-    padding-right: 24px;
-  }
-
-  dd {
-    margin: 0;
-  }
+  margin-top: 25px;
 }
 
 .catalog__item-title {
   color: $corp-green;
-  font-size: 25px;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 30px;
+  margin: 0;
 }
 
 .catalog__item-price {
   font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.catalog__item-details {
+  width: 50%;
+  padding-right: 24px;
+  margin-bottom: 20px;
+}
+
+.catalog__item-details dt {
+  font-size: 13px;
+  line-height: 18px;
+  color: $grey;
+  margin-bottom: 5px;
+}
+
+.catalog__item-details dd {
+  margin-bottom: 20px;
+  line-height: 20px;
+  margin: 0;
 }
 
 .catalog__heading-wrap {
@@ -55,4 +73,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.catalog__item-btn {
+  margin-top: auto;
 }

@@ -1,5 +1,8 @@
 .intro {
-  background-color: $grey-100;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/main-bg.jpg");
+  background-size: cover;
+  background-position-y: 40%;
+  color: $white;
 }
 
 .intro__wrapper {
@@ -14,13 +17,14 @@
 }
 
 .intro__slogan {
-  font-size: 60px;
+  font-size: 65px;
   line-height: 70px;
-  font-weight: bold;
+  font-weight: 500;
   margin: 0;
 }
 
 .intro__description {
-  font-size: 20px;
+  font-size: 22px;
+  line-height: 30px;
   margin: 50px 0;
 }

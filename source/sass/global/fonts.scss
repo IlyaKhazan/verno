@@ -1,23 +1,33 @@
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Euclid Square";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+  src: url("../fonts/EuclidSquare-Light.woff2") format("woff2"), url("../fonts/EuclidSquare-Light.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Euclid Square";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  src: url("../fonts/EuclidSquare-Regular.woff2") format("woff2"),
+    url("../fonts/EuclidSquare-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Euclid Square";
+  font-weight: 500;
   font-style: normal;
-  font-weight: 700;
   font-display: swap;
-  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+  src: url("../fonts/EuclidSquare-Medium.woff2") format("woff2"),
+    url("../fonts/EuclidSquare-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Euclid Square";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/EuclidSquare-Bold.woff2") format("woff2"), url("../fonts/EuclidSquare-Bold.woff") format("woff");
 }

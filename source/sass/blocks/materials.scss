@@ -5,8 +5,7 @@
 }
 
 .materials__title {
-  font-size: 50px;
-  font-weight: bold;
+  @include section-title;
   text-align: center;
 }
 
@@ -23,22 +22,26 @@
 }
 
 .materials__picture {
+  background: $corp-brown;
   &--nojs {
     display: none;
   }
 }
+
+.materials__info-title {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 25px;
+}
+
 .materials__info {
   position: absolute;
   font-size: 16px;
-  background-color: $grey-100;
-  top: 300px;
+  line-height: 23px;
+  background-color: $corp-brown;
+  top: 50%;
   right: 0;
-  width: 450px;
-  height: 350px;
+  width: 400px;
   padding: 30px 40px;
-}
-
-.materials__info-title {
-  font-size: 20px;
-  font-weight: bold;
+  color: $white;
 }

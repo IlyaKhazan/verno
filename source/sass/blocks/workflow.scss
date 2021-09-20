@@ -1,14 +1,12 @@
 .workflow {
   @include wrapper;
-  padding: 50px 0 25px;
+  padding: 0 0 25px;
 }
 
 .workflow__title {
-  font-size: 50px;
-  font-weight: bold;
-  text-align: center;
+  @include section-title;
   padding: 0;
-  margin: 0;
+  margin: -100px 0 0;
 }
 
 .workflow__list {
@@ -23,34 +21,40 @@
   position: relative;
   width: 15%;
   text-align: center;
-
+  font-size: 16px;
+  line-height: 25px;
   &::before {
     position: absolute;
     content: "";
-    width: 172px;
-    height: 54px;
-    top: -90px;
-    left: 0;
+    width: 128px;
+    height: 128px;
+    top: -140px;
+    left: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &--measurement::before {
-    background-image: url("../../img/verno_logo_white.png");
+    background-image: url("../../img/measurement.png");
+    top: -150px;
   }
 
   &--design::before {
-    background-image: url("../../img/verno_logo_white.png");
+    background-image: url("../../img/design.png");
   }
 
   &--payment::before {
-    background-image: url("../../img/verno_logo_white.png");
+    background-image: url("../../img/payment.png");
   }
 
   &--production::before {
-    background-image: url("../../img/verno_logo_white.png");
+    background-image: url("../../img/production.png");
   }
 
   &--install::before {
-    background-image: url("../../img/verno_logo_white.png");
+    background-image: url("../../img/install.png");
+    background-size: 80%;
+    top: -125px;
   }
 }
 

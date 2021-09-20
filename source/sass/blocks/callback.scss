@@ -1,11 +1,13 @@
 .callback {
   padding: 100px 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/callback-bg.jpg");
+  background-size: cover;
 }
 
 .callback__offer {
-  background-color: $grey-100;
   padding: 100px;
   order: 1;
+  color: $white;
 }
 
 .callback__wrapper {
@@ -14,15 +16,14 @@
 }
 
 .callback__title {
+  @include section-title;
   margin: 0;
-  font-size: 50px;
-  font-weight: bold;
-  line-height: 70px;
   padding-bottom: 50px;
 }
 
 .callback__subtitle {
   margin: 0;
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 500;
 }

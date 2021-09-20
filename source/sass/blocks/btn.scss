@@ -1,21 +1,21 @@
 .btn {
-  color: $corp-green;
+  color: $corp-brown;
   background: none;
   font-size: 16px;
   width: 200px;
   height: 50px;
-  border: 1px solid $corp-green;
+  border: 1px solid $corp-brown;
   cursor: pointer;
+  font-family: "Euclid Square", "Arial", sans-serif;
 }
 
 .btn:hover {
-  background-color: $corp-green;
+  background-color: $corp-brown;
   color: $white;
 }
 
 .btn--oval {
-  background-color: $corp-green;
-  border-radius: 35px;
+  background-color: $corp-brown;
   color: $white;
   font-size: 20px;
   width: 300px;
@@ -25,5 +25,5 @@
 .btn--wide {
   width: 100%;
   border: none;
-  border-top: 1px solid $grey-100;
+  border-top: 1px solid $corp-brown;
 }
