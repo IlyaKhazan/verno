@@ -7,13 +7,15 @@
 }
 
 .page-header__slogan {
-  color: $corp-green;
+  color: $corp-brown;
   font-size: 13px;
+  margin: 0;
+  padding-left: 15px;
+  width: 130px;
 }
 
-.page-header__address {
-  font-size: 13px;
-  line-height: 19px;
+.page-header__logo {
+  display: contents;
 }
 
 .page-header__phone-link {
@@ -22,7 +24,13 @@
   cursor: pointer;
 
   &:hover {
-    color: $corp-green;
+    color: $corp-brown;
     transition: all 0.5s;
   }
+}
+
+.page-header__wrap {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }

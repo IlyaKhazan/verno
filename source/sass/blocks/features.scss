@@ -9,6 +9,7 @@
 }
 
 .features__list {
+  position: relative;
   margin: -130px 0 0 0;
   padding: 0;
   list-style: none;
@@ -22,32 +23,86 @@
 }
 
 .features__item {
-  padding: 20px;
+  padding: 20px 20px 20px 150px;
   border: 1px solid $corp-brown;
 
   &:first-child {
     grid-area: a;
     border-bottom: none;
+    padding-left: 350px;
+
+    &::before {
+      background-image: url("../../img/features-3d.jpg");
+      width: 300px;
+      height: 200px;
+      left: 35%;
+      top: 4%;
+    }
   }
   &:nth-child(2) {
     grid-area: b;
     border-right: none;
     border-top: none;
+    padding-left: 290px;
+    &::before {
+      background-image: url("../../img/features-production.jpg");
+      width: 250px;
+      height: 200px;
+      top: 73%;
+      left: 1%;
+    }
   }
   &:nth-child(3) {
     grid-area: c;
     border-top: none;
+    padding-left: 280px;
+    &::before {
+      background-image: url("../../img/features-eco.png");
+      width: 250px;
+      height: 125px;
+      top: 74%;
+      left: 53%;
+    }
   }
   &:nth-child(4) {
     grid-area: d;
+    padding-left: 160px;
+    &::before {
+      background-image: url("../../img/features-service.jpg");
+      top: 41%;
+
+      left: 1%;
+    }
   }
   &:nth-child(5) {
     grid-area: e;
     border-right: none;
     border-left: none;
+
+    &::before {
+      background-image: url("../../img/features-blum.png");
+      top: 44%;
+      left: 34%;
+    }
   }
   &:last-child {
     grid-area: f;
+    &::before {
+      left: 68%;
+      content: "0%";
+      color: $corp-brown;
+      font-size: 72px;
+      top: 48%;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 128px;
+    height: 128px;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 

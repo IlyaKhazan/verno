@@ -1,12 +1,18 @@
 .workflow {
+  padding: 0 0 50px;
+  clip-path: polygon(0% 30%, 100% 0, 100% 100%, 0% 100%);
+  background-color: $grey;
+}
+
+.workflow__wrapper {
   @include wrapper;
-  padding: 0 0 25px;
 }
 
 .workflow__title {
   @include section-title;
-  padding: 0;
-  margin: -100px 0 0;
+  padding: 100px 0 25px;
+  margin: 0;
+  text-align: right;
 }
 
 .workflow__list {
@@ -33,28 +39,53 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  &::after {
+    position: absolute;
+    top: -125px;
+    font-size: 140px;
+    left: -15px;
+    z-index: -1;
+    color: $blue-transparent;
+  }
 
   &--measurement::before {
-    background-image: url("../../img/measurement.png");
+    background-image: url("../../img/measurement.svg");
     top: -150px;
+  }
+  &--measurement::after {
+    content: "1";
+    left: 0;
   }
 
   &--design::before {
-    background-image: url("../../img/design.png");
+    background-image: url("../../img/3d.svg");
+  }
+  &--design::after {
+    content: "2";
   }
 
   &--payment::before {
-    background-image: url("../../img/payment.png");
+    background-image: url("../../img/payment.svg");
+  }
+  &--payment::after {
+    content: "3";
   }
 
   &--production::before {
-    background-image: url("../../img/production.png");
+    background-image: url("../../img/production.svg");
+  }
+  &--production::after {
+    content: "4";
   }
 
   &--install::before {
-    background-image: url("../../img/install.png");
+    background-image: url("../../img/install.svg");
     background-size: 80%;
     top: -125px;
+  }
+
+  &--install::after {
+    content: "5";
   }
 }
 

@@ -1,36 +1,47 @@
 .callback-form {
-  padding: 50px;
+  padding: 25px 50px;
   background: $white;
-}
-
-.callback-form__title {
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 32px;
-  margin: 0 0 25px;
-}
-
-.callback-form__form {
+  width: 600px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+  box-shadow: -2px 4px 30px rgba(0, 0, 0, 0.13);
+  animation: bounce 0.6s;
+  transition: box-shadow 500ms;
+  text-align: left;
+}
+
+.callback-form--hidden {
+  animation: bounce-out 0.6s;
+  animation-fill-mode: forwards;
+  box-shadow: none;
 }
 
 .callback-form__field {
   padding: 5px;
   height: 40px;
   border: none;
-  border-bottom: 1px solid $corp-brown;
+  border-bottom: 1px solid $dark-brown;
   margin-bottom: 15px;
+}
+.callback-form__label {
+  font-size: 18px;
 }
 
 .callback-form__btn {
   margin-top: 10px;
+  color: $dark-brown;
+  border-color: $dark-brown;
+
+  &:hover {
+    background-color: $dark-brown;
+  }
 }
 
 .callback-form__privacy-info {
   font-size: 12px;
 
   a {
-    color: $corp-brown;
+    color: $dark-brown;
   }
 }

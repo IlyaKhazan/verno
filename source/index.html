@@ -12,18 +12,18 @@
 <body class="page__body">
   <h1 class="visually-hidden">Сайт сети салонов "Кухни Verno"</h1>
   <header class="page__header page-header">
-    <a class="page-header__logo" href="">
-      <img class="page-header__logo-img" src="img/verno_logo_white.png" width="172px" height="55px" alt="Логотип Верно">
-    </a>
-    <p class="page-header__slogan">
-      кухни под заказ
-    </p>
-
-    <p class="page-header__address">Наши салоны: <br>
-      г.Москва, 2-й Очаковский пер, д. 7</p>
+    <div class="page-header__wrap">
+      <a class="page-header__logo" href="">
+        <img class="page-header__logo-img" src="img/verno_logo_white.png" width="172px" height="55px"
+          alt="Логотип Верно">
+      </a>
+      <p class="page-header__slogan">
+        кухни под заказ от производителя
+      </p>
+    </div>
 
     <p class="page-header__phone">
-      <a class="page-header__phone-link" href="tel:+74956660166">+7 495 666 01 66</a>
+      <a class="page-header__phone-link" href="tel:+7 495 664 62 31">+7 495 664 62 31</a>
     </p>
     <button class="page-header__callback-btn callback-btn">Заказать звонок</button>
   </header>
@@ -31,13 +31,13 @@
   <main class="page-main">
     <nav class="main-nav">
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a class="main-nav__link" href="">Каталог</a> </li>
-        <li class="main-nav__item"><a class="main-nav__link" href="">Калькулятор кухни</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="">Вопрос-ответ</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="">Как мы работаем</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="">Оплата</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="">О компании</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="">Контакты</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#catalog">Каталог</a> </li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#materials">Материалы</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#features">Преимущества</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#workflow">Как мы работаем</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#cost">Стоимость</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#reviews">Отзывы</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#map">Наши салоны</a></li>
       </ul>
     </nav>
     <section class="intro">
@@ -46,14 +46,13 @@
           <h2 class="intro__slogan">Кухни под заказ
             от производителя</h2>
           <p class="intro__description">Индивидуальные кухни в Москве и Московской области</p>
-          <button class="intro__btn btn btn--oval">Подобрать кухню</button>
+          <button class="intro__btn btn btn--intro">Подобрать кухню</button>
         </div>
         <div class="intro__promo">
-
         </div>
       </div>
     </section>
-    <section class="materials">
+    <section class="materials" id="materials">
       <h2 class="visually-hidden">Материалы покрытия фасадов</h2>
       <p class="materials__title">Создаём кухни из лучших материалов</p>
       <div class="materials__wrapper">
@@ -76,7 +75,7 @@
           факторам. Прослужит не один десяток лет!</p>
       </div>
     </section>
-    <section class="catalog">
+    <section class="catalog" id="catalog">
       <div class="catalog__wrapper">
         <div class="catalog__filter filter">
           <div class="filter__wrapper">
@@ -86,13 +85,13 @@
                 Стиль кухни
               </p>
               <ul class="filter__list">
-                <li class="filter__item">
-                  <input name="" id="" type="checkbox">
-                  <label for="">Современный</label>
+                <li class="filter__item checkbox-field">
+                  <input class="checkbox-field__input" name="modern" id="modern" type="checkbox">
+                  <label for="modern" class="checkbox-field__label">Современный</label>
                 </li>
-                <li class="filter__item">
-                  <input name="" id="" type="checkbox">
-                  <label for="">Классический</label>
+                <li class="filter__item checkbox-field">
+                  <input class="checkbox-field__input" name="classic" id="classic" type="checkbox">
+                  <label for="classic" class="checkbox-field__label">Классический</label>
                 </li>
               </ul>
 
@@ -102,17 +101,17 @@
                 Материал фасадов
               </p>
               <ul class="filter__list">
-                <li class="filter__item">
-                  <input name="" id="" type="checkbox">
-                  <label for="">Шпон</label>
+                <li class="filter__item checkbox-field">
+                  <input class="checkbox-field__input" name="wood" id="wood" type="checkbox">
+                  <label for="wood" class="checkbox-field__label">Шпон</label>
                 </li>
-                <li class="filter__item">
-                  <input name="" id="" type="checkbox">
-                  <label for="">Термопластик</label>
+                <li class="filter__item checkbox-field">
+                  <input class="checkbox-field__input" name="plastic" id="plastic" type="checkbox">
+                  <label for="plastic" class="checkbox-field__label">Термопластик</label>
                 </li>
-                <li class="filter__item">
-                  <input name="" id="" type="checkbox">
-                  <label for="">Эмаль</label>
+                <li class="filter__item checkbox-field">
+                  <input class="checkbox-field__input" name="paint" id="paint" type="checkbox">
+                  <label for="paint" class="checkbox-field__label">Эмаль</label>
                 </li>
               </ul>
             </div>
@@ -120,160 +119,160 @@
         </div>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <img class="catalog__picture" src="https://via.placeholder.com/590x350.png" width="590px" height="350px"
-              alt="">
+            <img class="catalog__picture" src="img/catalog-unica.jpg" width="590px" height="350px"
+              alt="Кухня Уника">
             <div class="catalog__item-wrap">
               <div class="catalog__heading-wrap">
                 <h3 class="catalog__item-title">Уника</h3>
-                <p class="catalog__item-price">от 125 000 р.</p>
+                <p class="catalog__item-price">от 125 000 / <span>3 метра</span> </p>
               </div>
               <dl class="catalog__item-info">
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
+                  <dt>Материал фасадов:</dt>
                   <dd>Экологически безопасная МДФ 19 мм</dd>
                 </div>
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
-                  <dd>Экологически безопасная МДФ 19 мм</dd>
+                  <dt>Покрытие фасадов:</dt>
+                  <dd>Термопластик</dd>
                 </div>
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
-                  <dd>Экологически безопасная МДФ 19 мм</dd>
+                  <dt>Материал каркасов:</dt>
+                  <dd>Экологически безопасная ЛДСП 16мм</dd>
                 </div>
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
-                  <dd>Экологически безопасная МДФ 19 мм</dd>
+                  <dt>Покрытие каркасов:</dt>
+                  <dd>Ламинат</dd>
                 </div>
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
-                  <dd>Экологически безопасная МДФ 19 мм</dd>
+                  <dt>Фурнитура:</dt>
+                  <dd>Blum (Австрия)</dd>
                 </div>
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
-                  <dd>Экологически безопасная МДФ 19 мм</dd>
+                  <dt>Столешница:</dt>
+                  <dd>Пластик, искуссственный камень, кварцевый агломерат</dd>
                 </div>
               </dl>
             </div>
             <button class="catalog__item-btn btn btn--wide">Рассчитать кухню</button>
           </li>
           <li class="catalog__item">
-            <img class="catalog__picture" src="https://via.placeholder.com/590x350.png" width="590px" height="350px"
-              alt="">
+
+            <img class="catalog__picture" src="img/catalog-country.jpg" width="590px" height="350px"
+              alt="Кухня Кантри">
             <div class="catalog__item-wrap">
               <div class="catalog__heading-wrap">
-                <h3 class="catalog__item-title">Уника</h3>
-                <p class="catalog__item-price">от 125 000 р.</p>
+                <h3 class="catalog__item-title">Кантри</h3>
+                <p class="catalog__item-price">от 189 000 / <span>3 метра</span> </p>
               </div>
               <dl class="catalog__item-info">
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
+                  <dt>Материал фасадов:</dt>
                   <dd>Экологически безопасная МДФ 19 мм</dd>
                 </div>
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
-                  <dd>Экологически безопасная МДФ 19 мм</dd>
+                  <dt>Покрытие фасадов:</dt>
+                  <dd>Шпон</dd>
                 </div>
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
-                  <dd>Экологически безопасная МДФ 19 мм</dd>
+                  <dt>Материал каркасов:</dt>
+                  <dd>Экологически безопасная ЛДСП 16мм</dd>
                 </div>
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
-                  <dd>Экологически безопасная МДФ 19 мм</dd>
+                  <dt>Покрытие каркасов:</dt>
+                  <dd>Ламинат</dd>
                 </div>
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
-                  <dd>Экологически безопасная МДФ 19 мм</dd>
+                  <dt>Фурнитура:</dt>
+                  <dd>Blum (Австрия)</dd>
                 </div>
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
-                  <dd>Экологически безопасная МДФ 19 мм</dd>
+                  <dt>Столешница:</dt>
+                  <dd>Пластик, искуссственный камень, кварцевый агломерат</dd>
                 </div>
               </dl>
             </div>
             <button class="catalog__item-btn btn btn--wide">Рассчитать кухню</button>
           </li>
           <li class="catalog__item">
-            <img class="catalog__picture" src="https://via.placeholder.com/590x350.png" width="590px" height="350px"
-              alt="">
+
+            <img class="catalog__picture" src="img/catalog-integra.jpg" width="590px" height="350px"
+              alt="Кухня Интегра">
             <div class="catalog__item-wrap">
               <div class="catalog__heading-wrap">
-                <h3 class="catalog__item-title">Уника</h3>
-                <p class="catalog__item-price">от 125 000 р.</p>
+                <h3 class="catalog__item-title">Интегра</h3>
+                <p class="catalog__item-price">от 215 000 ₽ / <span>3 метра</span> </p>
               </div>
               <dl class="catalog__item-info">
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
+                  <dt>Материал фасадов:</dt>
                   <dd>Экологически безопасная МДФ 19 мм</dd>
                 </div>
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
-                  <dd>Экологически безопасная МДФ 19 мм</dd>
+                  <dt>Покрытие фасадов:</dt>
+                  <dd>Глянцевая эмаль</dd>
                 </div>
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
-                  <dd>Экологически безопасная МДФ 19 мм</dd>
+                  <dt>Материал каркасов:</dt>
+                  <dd>Экологически безопасная ЛДСП 16мм</dd>
                 </div>
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
-                  <dd>Экологически безопасная МДФ 19 мм</dd>
+                  <dt>Покрытие каркасов:</dt>
+                  <dd>Ламинат</dd>
                 </div>
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
-                  <dd>Экологически безопасная МДФ 19 мм</dd>
+                  <dt>Фурнитура:</dt>
+                  <dd>Blum (Австрия)</dd>
                 </div>
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
-                  <dd>Экологически безопасная МДФ 19 мм</dd>
+                  <dt>Столешница:</dt>
+                  <dd>Пластик, искуссственный камень, кварцевый агломерат</dd>
                 </div>
               </dl>
             </div>
             <button class="catalog__item-btn btn btn--wide">Рассчитать кухню</button>
-
           </li>
           <li class="catalog__item">
 
-            <img class="catalog__picture" src="https://via.placeholder.com/590x350.png" width="590px" height="350px"
-              alt="">
+            <img class="catalog__picture" src="img/catalog-florentina.jpg" width="590px" height="350px"
+              alt="Кухня Флорентина">
             <div class="catalog__item-wrap">
               <div class="catalog__heading-wrap">
-                <h3 class="catalog__item-title">Уника</h3>
-                <p class="catalog__item-price">от 125 000 р.</p>
+                <h3 class="catalog__item-title">Флорентина</h3>
+                <p class="catalog__item-price">от 235 000 / <span>3 метра</span> </p>
               </div>
               <dl class="catalog__item-info">
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
+                  <dt>Материал фасадов:</dt>
                   <dd>Экологически безопасная МДФ 19 мм</dd>
                 </div>
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
-                  <dd>Экологически безопасная МДФ 19 мм</dd>
+                  <dt>Покрытие фасадов:</dt>
+                  <dd>Шпон, эмаль</dd>
                 </div>
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
-                  <dd>Экологически безопасная МДФ 19 мм</dd>
+                  <dt>Материал каркасов:</dt>
+                  <dd>Экологически безопасная ЛДСП 16мм</dd>
                 </div>
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
-                  <dd>Экологически безопасная МДФ 19 мм</dd>
+                  <dt>Покрытие каркасов:</dt>
+                  <dd>Ламинат</dd>
                 </div>
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
-                  <dd>Экологически безопасная МДФ 19 мм</dd>
+                  <dt>Фурнитура:</dt>
+                  <dd>Blum (Австрия)</dd>
                 </div>
                 <div class="catalog__item-details">
-                  <dt>Основной материал фасадов:</dt>
-                  <dd>Экологически безопасная МДФ 19 мм</dd>
+                  <dt>Столешница:</dt>
+                  <dd>Пластик, искуссственный камень, кварцевый агломерат</dd>
                 </div>
               </dl>
             </div>
             <button class="catalog__item-btn btn btn--wide">Рассчитать кухню</button>
-
           </li>
           <!-- <a href="" class="catalog__showmore-btn">Показать ещё</a> -->
         </ul>
     </section>
-    <section class="features">
+    <section class="features" id="features">
       <h2 class="features__title"> Наши <br> преимущества</h2>
       <ul class="features__list">
         <li class="features__item">
@@ -291,22 +290,23 @@
           </p>
         </li>
         <li class="features__item">
-          <p class="features__item-title">Кухня под ключ</p>
+          <p class="features__item-title">Кухня "под ключ"</p>
           <p class="features__item-info">Каждая кухня комплектуется сантехникой, техникой, подсветкой и декоративными
             элементами</p>
         </li>
         <li class="features__item">
-          <p class="features__item-title">Индивидуальный подход</p>
-          <p class="features__item-info">Для каждого клиента разрабатывается персональный проект кухни в 3D</p>
+          <p class="features__item-title">Фурнитура Blum</p>
+          <p class="features__item-info">Каждая кухня оснащена фурнитурой компании Blum - лидера рынка. Доводчики уже в
+            базовом наполнении!</p>
         </li>
         <li class="features__item">
-          <p class="features__item-title">Индивидуальный подход</p>
-          <p class="features__item-info">Для каждого клиента разрабатывается персональный проект кухни в 3D</p>
+          <p class="features__item-title">Беспроцентная рассрочка</p>
+          <p class="features__item-info">Воспользуйтесь беспроцентной рассрочкой на срок до 6 месяцев!</p>
         </li>
       </ul>
     </section>
 
-    <section class="cost">
+    <section class="cost" id="cost">
       <div class="cost__wrapper">
         <h2 class="visually-hidden">Расчёт стоимости кухни</h2>
         <p class="cost__title">Узнайте примерную стоимость Вашей кухни за 1 минуту</p>
@@ -314,29 +314,64 @@
         <button class="cost__btn btn btn--oval">Рассчитать онлайн</button>
       </div>
     </section>
-    <section class="workflow">
-      <h2 class="visually-hidden">Порядок работы</h2>
-      <p class="workflow__title">5 шагов <br> до Вашей кухни</p>
-      <ul class="workflow__list">
-        <li class="workflow__item workflow__item--measurement">
-          <p class="workflow__item-title">Бесплатный замер в удобное время</p>
-        </li>
-        <li class="workflow__item workflow__item--design">
-          <p class="workflow__item-title">Бесплатный дизайн-проект</p>
-        </li>
-        <li class="workflow__item workflow__item--payment">
-          <p class="workflow__item-title">Оплата, беспроцентная рассрочка</p>
-        </li>
-        <li class="workflow__item workflow__item--production">
-          <p class="workflow__item-title">Производство</p>
-        </li>
-        <li class="workflow__item workflow__item--install">
-          <p class="workflow__item-title">Доставка и профессиональная сборка</p>
-        </li>
-      </ul>
-      <button class="workflow__btn btn">Подробнее о нашем сервисе</button>
+
+    <section class="partners">
+      <h2 class="partners__title">Закажите кухню "под ключ"</h2>
+      <div class="partners__wrapper">
+        <ul class="partners__list">
+          <li class="partners__item"><img src="img/logo/blum-logo.jpg" width="150px" height="50px" alt="Логотип Blum">
+          </li>
+          <li class="partners__item"><img src="img/logo/egger-logo.jpg" width="150px" height="50px" alt="Логотип Egger">
+          </li>
+          <li class="partners__item"><img src="img/logo/slotex-logo.png" width="150px" height="50px"
+              alt="Логотип Slotex">
+          </li>
+          <li class="partners__item"><img src="img/logo/hettich-logo.jpg" width="150px" height="50px"
+              alt="Логотип Hettich"> </li>
+          <li class="partners__item"><img src="img/logo/staron-logo.png" width="150px" height="50px"
+              alt="Логотип Staron">
+          </li>
+          <li class="partners__item"><img src="img/logo/avant-logo.png" width="150px" height="50px" alt="Логотип Avant">
+          </li>
+          <li class="partners__item"><img src="img/logo/gorenje-logo.png" width="150px" height="50px"
+              alt="Логотип Gorenje"> </li>
+          <li class="partners__item"><img src="img/logo/electrolux-logo.svg" width="150px" height="50px"
+              alt="Логотип Electrolux"> </li>
+          <li class="partners__item"><img src="img/logo/staron-logo.png" width="150px" height="50px"
+              alt="Логотип Staron">
+          </li>
+        </ul>
+        <div class="partners__text">
+          <p class="partners__subtitle">Мы работаем только с надёжными партнёрами</p>
+          <p class="partners__info">Вы можете приобрести не только кухонный гарнитур, но и доукомплектовать его самыми
+            последними новинками от передовых производителей техники, фурнитуры и комплектующих</p>
+        </div>
+      </div>
     </section>
-    <section class="reviews">
+    <section class="workflow" id="workflow">
+      <div class="workflow__wrapper">
+        <h2 class="visually-hidden">Порядок работы</h2>
+        <p class="workflow__title">5 шагов до Вашей кухни</p>
+        <ul class="workflow__list">
+          <li class="workflow__item workflow__item--measurement">
+            <p class="workflow__item-title">Бесплатный замер в удобное время</p>
+          </li>
+          <li class="workflow__item workflow__item--design">
+            <p class="workflow__item-title">Бесплатный дизайн-проект</p>
+          </li>
+          <li class="workflow__item workflow__item--payment">
+            <p class="workflow__item-title">Оплата, беспроцентная рассрочка</p>
+          </li>
+          <li class="workflow__item workflow__item--production">
+            <p class="workflow__item-title">Производство</p>
+          </li>
+          <li class="workflow__item workflow__item--install">
+            <p class="workflow__item-title">Доставка и профессиональная сборка</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="reviews" id="reviews">
       <h2 class="reviews__title">Отзывы наших клиентов</h2>
       <div class="reviews__review-card review-card">
         <div class="review-card__wrapper">
@@ -349,92 +384,64 @@
             компания и команда профессионалов!
           </div>
           <div class="review-card__photos">
-            <img src="https://via.placeholder.com/200x150.png" width='200px' height="150px" alt="Фото отзыва">
-            <img src="https://via.placeholder.com/200x150.png" width='200px' height="150px" alt="Фото отзыва">
-            <img src="https://via.placeholder.com/200x150.png" width='200px' height="150px" alt="Фото отзыва">
+            <img src="img/reviews-01.jpg" width='200px' height="150px" alt="Фото отзыва">
+            <img src="img/reviews-02.jpg" width='200px' height="150px" alt="Фото отзыва">
+            <img src="img/reviews-03.jpg" width='200px' height="150px" alt="Фото отзыва">
           </div>
           <p class="review-card__author">Михаил Маслов, г. Москва</p>
         </div>
     </section>
-    <section class="callback">
-      <div class="callback__wrapper">
-        <div class="callback__offer">
-          <h2 class="visually-hidden">Форма обратной связи</h2>
-          <p class="callback__title">Подберём идеальную кухню для Вас</p>
-          <p class="callback__subtitle">Бесплатный выезд замерщика в удобное время</p>
-        </div>
-        <div class="callback__form callback-form">
-          <h3 class="callback-form__title">Заявка на бесплатный подбор и расчет!</h3>
-          <form class="callback-form__form" action="GET">
+    <section class="map" id="map">
+      <div class="map__wrapper">
+        <h2 class="map__title">Наши салоны</h2>
+        <p class="map__info">Оставьте заявку на консультацию и наш менеджер тут же свяжется с Вами, <br> поможет
+          подобрать
+          кухню, сделает предварительный расчёт!</p>
+        <button class="map__button btn" type="button">Оставить заявку</button>
+        <div class="map__container">
+          <form class="map__form callback-form" action="GET">
             <label class="callback-form__label" for="name">Ваше имя:</label>
             <input class="callback-form__field" type="text" name="name" id="name">
             <label class="callback-form__label" for="phone">Ваш телефон:</label>
             <input class="callback-form__field" type="phone" name="phone" id="phone">
             <button class="callback-form__btn btn" type="submit">Подобрать кухню</button>
+            <p class="callback-form__privacy-info">Нажимая на кнопку вы даете согласие <a href="#">на обработку
+                персональных данных</a></p>
           </form>
-          <p class="callback-form__privacy-info">Нажимая на кнопку вы даете согласие <a href="#">на обработку
-              персональных данных</a></p>
+          <iframe class="map__frame"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A84b822d6123330e795d1e4014e950f66dd34eca3a9f913c4801ab203727f6239&amp;source=constructor"
+            width="544" height="606" frameborder="0"></iframe>
         </div>
       </div>
     </section>
   </main>
   <footer class="page__footer">
     <div class="page-footer">
-      <a class="page-footer__copyright" href="">
-        Verno Кухни
-      </a>
+
+      <a class="page-footer__phone-link" href="tel:+7 495 664 62 31">+7 495 664 62 31</a>
+
+
       <div class="page-footer__socials socials">
         <span class="visually-hidden">Мы в Инстаграмме</span>
         <a href="#">
-          <svg
-            height="52px"
-            style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px"
-            xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g id="_x36_2-instagram">
-              <g>
-                <linearGradient gradientUnits="userSpaceOnUse" id="SVGID_1_" x1="65.9038" x2="446.3573" y1="444.4766"
-                  y2="64.0231">
-                  <stop offset="0" style="stop-color:#FFC107" />
-                  <stop offset="0.2211" style="stop-color:#F98D1C" />
-                  <stop offset="0.5137" style="stop-color:#F1423B" />
-                  <stop offset="0.8329" style="stop-color:#B93088" />
-                  <stop offset="0.9944" style="stop-color:#9C27B0" />
-                </linearGradient>
-                <path
-                  d="M343.193,22H168.32C87.854,22,23,86.863,23,166.958v174.079    C23,421.137,87.854,487,168.32,487h174.873C423.66,487,490,421.137,490,341.037V166.958C490,86.863,423.66,22,343.193,22z     M446,341.037C446,397.025,399.438,443,343.193,443H168.32C112.071,443,66,397.025,66,341.037V166.958    C66,110.973,112.071,65,168.32,65h174.873C399.438,65,446,110.973,446,166.958V341.037z"
-                  style="fill:url(#SVGID_1_);" />
-                <linearGradient gradientUnits="userSpaceOnUse" id="SVGID_2_" x1="173.5107" x2="338.0032" y1="336.2451"
-                  y2="171.7527">
-                  <stop offset="0" style="stop-color:#FFC107" />
-                  <stop offset="0.2211" style="stop-color:#F98D1C" />
-                  <stop offset="0.5137" style="stop-color:#F1423B" />
-                  <stop offset="0.8329" style="stop-color:#B93088" />
-                  <stop offset="0.9944" style="stop-color:#9C27B0" />
-                </linearGradient>
-                <path
-                  d="M255.756,137.947c-64.382,0-116.581,51.961-116.581,116.055    c0,64.085,52.199,116.045,116.581,116.045c64.383,0,116.58-51.96,116.58-116.045C372.336,189.908,320.139,137.947,255.756,137.947    z M255.756,326.531c-40.164,0-72.86-32.551-72.86-72.529c0-40.016,32.696-72.534,72.86-72.534    c40.162,0,72.861,32.519,72.861,72.534C328.617,293.98,295.918,326.531,255.756,326.531z"
-                  style="fill:url(#SVGID_2_);" />
-                <linearGradient gradientUnits="userSpaceOnUse" id="SVGID_3_" x1="370.1182" x2="392.037" y1="140.2031"
-                  y2="118.2843">
-                  <stop offset="0" style="stop-color:#FFC107" />
-                  <stop offset="0.2211" style="stop-color:#F98D1C" />
-                  <stop offset="0.5137" style="stop-color:#F1423B" />
-                  <stop offset="0.8329" style="stop-color:#B93088" />
-                  <stop offset="0.9944" style="stop-color:#9C27B0" />
-                </linearGradient>
-                <path
-                  d="M381.08,113.779c-8.581,0-15.538,6.924-15.538,15.463c0,8.54,6.957,15.467,15.538,15.467    c8.573,0,15.532-6.927,15.532-15.467C396.612,120.703,389.653,113.779,381.08,113.779z"
-                  style="fill:url(#SVGID_3_);" />
-              </g>
-            </g>
-            <g id="Layer_1" />
+          <svg width="25" height="25" fill="#ffffff" class="bi bi-instagram"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
           </svg>
         </a>
       </div>
-      <a class="page-footer__privacy" href="#">Политика конфиденциальности</a>
+      <div class="page-footer__inner-wrap">
+        <a class="page-footer__privacy" href="#">Политика конфиденциальности</a>
+        <a class="page-footer__copyright" href="">
+          © Verno Кухни
+        </a>
+      </div>
     </div>
 
   </footer>
+
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

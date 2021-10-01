@@ -12,18 +12,27 @@
 .btn:hover {
   background-color: $corp-brown;
   color: $white;
+  transition: all 0.5s;
 }
 
-.btn--oval {
+.btn--intro {
   background-color: $corp-brown;
   color: $white;
   font-size: 20px;
   width: 300px;
   height: 60px;
+  border: transparent;
+
+  &:hover {
+    background-color: $dark-brown;
+  }
 }
 
 .btn--wide {
   width: 100%;
   border: none;
   border-top: 1px solid $corp-brown;
+  &:hover {
+    background-color: $dark-brown;
+  }
 }
